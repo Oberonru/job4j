@@ -1,5 +1,9 @@
 package ru.job4j.calculate;
-
+/**
+*class Calculator.
+*@autor Alexey Petrushenko
+*since 21.11.2018
+*/
 public class Calculate {
 	 /**
      * Main.
