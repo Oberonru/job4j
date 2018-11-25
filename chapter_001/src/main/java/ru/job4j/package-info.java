@@ -1,4 +1,4 @@
-package ru.job4j.calculate;
+package ru.job4j;
 /**
 * package for calculate task
 * @author Alexey Petrushenko

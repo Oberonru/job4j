@@ -16,6 +16,7 @@
     <modules>
         <module>chapter_001</module>
     </modules>
+
 <dependencies>
     <dependency>
         <groupId>org.hamcrest</groupId>
@@ -30,6 +31,7 @@
         <scope>test</scope>
     </dependency>
 </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -37,6 +39,7 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.0.0</version>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
@@ -58,6 +61,7 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 </project>
