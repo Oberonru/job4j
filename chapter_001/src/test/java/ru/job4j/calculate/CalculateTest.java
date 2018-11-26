@@ -8,8 +8,8 @@ import static org.junit.Assert.assertThat;
 /**
  * Test
  *
+ * @version 1.0.0
  * @autor Alexey Petrushenko
- * version 1.0.0
  * @since 20.11.2018
  */
 

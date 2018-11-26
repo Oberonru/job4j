@@ -1,11 +1,11 @@
 package ru.job4j.calculate;
 
-/**
- * class Calculator.
- *
- * @autor Alexey Petrushenko
- * since 21.11.2018
- */
+    /**
+     * class Calculator
+     *
+     * @autor Alexey Petrushenko
+     * @since 21.11.2018.
+     */
 public class Calculate {
     /**
      * Main.
@@ -33,20 +33,20 @@ public class Calculate {
         this.result = first + second;
     }
 
-	public void substract(double first, double second) {
+    public void substract(double first, double second) {
         this.result = first - second;
     }
 
-    public void div (double first, double second) {
-        this.result = first/second;
+    public void div(double first, double second) {
+        this.result = first / second;
     }
 
-    public void multiple (double first, double second) {
-        this.result = first*second;
+    public void multiple(double first, double second) {
+        this.result = first * second;
     }
 
     public double getResult() {
-        return  this.result;
+        return this.result;
     }
 
 }
