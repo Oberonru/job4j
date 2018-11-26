@@ -7,7 +7,7 @@ public class Point {
      * @since 26.11.2018
      */
 
-    private int x,y;
+    private int x, y;
 
     public Point(int x, int y) {
         this.x = x;
@@ -15,6 +15,6 @@ public class Point {
     }
 
     public double distanceTo(Point that) {
-        return Math.sqrt(Math.pow(this.x - that.x,2) + Math.pow (this.y - that.y,2));
+        return Math.sqrt(Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2));
     }
 }
