@@ -13,18 +13,30 @@ public class MaxTest {
         Max mx = new Max();
         assertThat(mx.max(3, 5), is(5));
     }
+
     @Test
     public void testMax2() {
         Max mx = new Max();
-        assertThat(mx.max(3, 5), is(5));
+        assertThat(mx.max(5, 3), is(5));
     }
-
 
 
     @Test
     public void testMaxThree() {
         Max mx = new Max();
         Assert.assertThat(mx.max(1, 2, 3), is(3));
+    }
+
+    @Test
+    public void testMaxThree2() {
+        Max mx = new Max();
+        Assert.assertThat(mx.max(2, 3, 1), is(3));
+    }
+
+    @Test
+    public void testMaxThree3() {
+        Max mx = new Max();
+        Assert.assertThat(mx.max(-3, 1, 2), is(2));
     }
 }
 
