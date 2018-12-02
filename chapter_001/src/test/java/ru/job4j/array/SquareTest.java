@@ -14,8 +14,9 @@ public class SquareTest {
         int[] expect = new int[]{1, 4, 9};
         assertThat(rst, is(expect));
     }
+
     @Test
-    public void whenBound3Then149_2() {
+    public void whenBound3Then1492() {
         int bound = 5;
         Square square = new Square();
         int[] rst = square.calculate(bound);
