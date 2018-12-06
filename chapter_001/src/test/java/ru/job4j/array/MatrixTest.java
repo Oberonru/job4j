@@ -15,4 +15,11 @@ public class MatrixTest {
         assertThat(table, is(expect));
     }
 
+    @Test
+    public void testMultiple2() {
+        Matrix matrix = new Matrix();
+        int[][] expect = {{1, 2, 3}, {2, 4, 6}, {3, 6, 9}};
+        assertThat(matrix.multiple(3), is(expect));
+    }
+
 }
