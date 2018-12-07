@@ -4,17 +4,17 @@ public class MatrixCheck {
 
     public static boolean mono(boolean[][] data) {
         boolean result = true;
-        int leftDiagonal = 0;
-        int rightDiagonal = 0;
         for (int i = 0; i < data.length - 1; i++) {
-            if (data[i][i] == data[i + 1][i + 1]) {
-                leftDiagonal++;
+            if (data[data.length -1][data.length - 1] != data[data.length - 1 - i][data.length - 1 - i]) {
+                result = false;
+                break;
             }
-            if (data[data.length - 1][data.length - 1] == data[data.length - 1 - i][data.length - 1 - i]) {
-                rightDiagonal++;
+            if (data[i][i] != data[i + 1][i + 1])   {
+                result = false;
+                break;
             }
         }
-        return leftDiagonal == data.length - 1 || rightDiagonal == data.length - 1;
+        return result;
     }
 
 }
