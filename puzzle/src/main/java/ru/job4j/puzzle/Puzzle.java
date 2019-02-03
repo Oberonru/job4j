@@ -1,4 +1,4 @@
-package ru.job4j.puzzle.firuges;
+package ru.job4j.puzzle;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
