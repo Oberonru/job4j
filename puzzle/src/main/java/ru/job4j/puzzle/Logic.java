@@ -75,13 +75,12 @@ public class Logic {
                 horizontalWin = true;
                 break;
             }
-        }
-        for (int i = 0; i < table[0].length; i++) {
             if (isWinVertical(i, table)) {
                 verticalWin = true;
                 break;
             }
         }
+
         return horizontalWin || verticalWin;
     }
 
