@@ -16,4 +16,14 @@ public class ArraysMergerTest {
 
         Assert.assertThat(merger.arraysMerger(a, b), is(mergedArrays));
     }
+
+    @Test
+    public void testArraysMerger2() {
+        ArraysMerger merger = new ArraysMerger();
+        int[] a = {21, 23, 24, 40, 75, 76};
+        int[] b = {10, 11, 41, 50, 65, 86, 98, 101, 190, 1100, 1200, 3000, 5000};
+        int[] mergedArrays = {10, 11, 21, 23, 24, 40, 41, 50, 65, 75, 76, 86, 98, 101, 190, 1100, 1200, 3000, 5000};
+
+        Assert.assertThat(merger.arraysMerger(a, b), is(mergedArrays));
+    }
 }
