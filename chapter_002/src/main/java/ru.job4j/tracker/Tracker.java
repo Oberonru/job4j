@@ -1,4 +1,4 @@
-package ru.job4j.trackStudio;
+package ru.job4j.tracker;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -50,14 +50,25 @@ public class Tracker {
      */
     public boolean delete(String id) {
         Item[] newItems = new Item[items.length - 1];
-        for (int i = 0; i < items.length; i++) {
-            if (items[i].equals(id)) {
-                System.arraycopy(items, 0, newItems, 0, i);
-                System.arraycopy(items, i + 1, newItems, i, items.length - i - 1);
-                return true;
+        boolean isDeleted = false;
+        int i = 0;
+        for (Item item : items) {
+            if (item != null && item.getId().equals(id)) {
+                isDeleted = true;
+            } else {
+                newItems[i] = item;
+                i++;
             }
         }
-        return false;
+        items = newItems;
+//        for (int i = 0; i < items.length; i++) {
+//            if (items[i] != null && items[i].equals(id)) {
+//                System.arraycopy(items, 0, newItems, 0, i);
+//                System.arraycopy(items, i + 1, newItems, i, items.length - i - 1);
+//                return true;
+//            }
+//        }
+        return isDeleted;
     }
 
     /**
@@ -93,7 +104,7 @@ public class Tracker {
      */
     public Item findById(String id) {
         for (Item item : items) {
-            if (item.getId().equals(id)) {
+            if (item != null && item.getId().equals(id)) {
                 return item;
             }
         }

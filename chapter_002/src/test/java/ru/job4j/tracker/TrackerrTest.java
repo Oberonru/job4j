@@ -1,4 +1,4 @@
-package ru.job4j.trackStudio;
+package ru.job4j.tracker;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -38,6 +38,16 @@ public class TrackerrTest {
         Item item = new Item("test", "testFindById", 123L);
         tracker.add(item);
         Assert.assertThat(tracker.findById(item.getId()).getName(), is("test"));
+    }
+
+    @Test
+    public void testDelete() {
+        Tracker tracker = new Tracker();
+        Item item = new Item("test", "testFindById", 123L);
+        tracker.add(item);
+        Assert.assertThat(tracker.findById(item.getId()).getName(), is("test"));
+        tracker.delete(item.getId());
+        Assert.assertNull(tracker.findById(item.getId()));
     }
 
 }
